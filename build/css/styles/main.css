@@ -1,0 +1,12 @@
+@import url(font/font.css);
+@import url(../modules/sidebar.css);
+@import url(../modules/content.css);
+.layout {
+  display: flex; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+.sidebar__text {
+  font-family: 'Open Sans' sans-serif; }

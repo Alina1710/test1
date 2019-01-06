@@ -1,26 +1,41 @@
-<!DOCTYPE html>
+doctype html
 html(lang="en-us")
-  head
-    meta(charset="UTF-8")
-    title Title page
-    link(rel="stylesheet", href="css/main.css")
-  body
-    div(class="layout")
-        nav
-            div(class="nav__arrow")
-                img(src="images/arrow.png")
-            div(class="nav__icons")     
-                div(class="nav__icons-1")
-                img(src="images/1448809128_bell_44444.png")
-                div(class="nav__icons-2")
-                    img(src="images/1448809128_bell_44444.png")
-                div(class="nav__icons-3")
-                    img(src="images/1448809128_bell_44444.png")
-                div(class="nav__icons-4")
-                    img(src="images/1448809128_bell_44444.png")
-        main
-        aside
-            h1 General information
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat adipisci repellendus dignissimos corrupti, eum beatae. Pariatur vero ullam voluptas iure adipisci, at nesciunt ducimus iusto rem dolorem quasi officia, quos?
-        footer
-  
+    head
+        meta(charset="UTF-8")
+        title Title page
+        link(rel="stylesheet", href="css/styles/main.css")
+    body
+        .layout
+            aside.sidebar
+                .sidebar__inner
+                    .sidebar__icon
+                        img(src="images/arrow.png")
+                    nav.nav
+                        ul.nav__list
+                            li.nav__item
+                                a(href="#").nav__link
+                                    span.nav__img
+                                        img(src="images/bell.png")
+                            li.nav__item
+                                a(href="#").nav__link
+                                    span.nav__img
+                                        img(src="images/bell.png")
+                            li.nav__item
+                                a(href="#").nav__link
+                                    span.nav__img
+                                        img(src="images/bell.png")
+                            li.nav__item
+                                a(href="#").nav__link
+                                    span.nav__img
+                                        img(src="images/bell.png")                            
+            main.content
+                .content__inner
+                    .content__text
+                        p.content__text__p Notifycation add-on
+                        h1.content__text__h1 Notify users via email
+                    .content__form
+                    
+            aside.sidebar
+                .sidebar__text
+                    h2.sidebar__text__h2 General Information
+                    p.sidebar__text__p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe blanditiis a harum asperiores dolor officia, error minus voluptatem repellendus, deserunt deleniti, quaerat numquam quasi enim eius iusto, fugiat incidunt nulla.             

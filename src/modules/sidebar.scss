@@ -1,0 +1,44 @@
+@import url(font/font.css);
+
+.sidebar__inner{
+    background-color: #3E5F82;
+    width: 68px;
+}
+.sidebar__icon{
+    text-align: center;
+    margin-bottom: 410px;
+}
+.sidebar__icon img{
+    width: 34px;
+    height: 20px;
+    margin-top: 22px;
+}
+.nav{
+    text-align: center;
+}
+.nav__img img{
+    width: 34px;
+    height: 34px;
+}
+.nav__list{
+    padding-bottom: 10px;
+}
+.nav__item{
+    margin-bottom: 18px;
+}
+.sidebar__text{
+    display: inline-block;
+    width: 396px;
+    height: 688px;
+    background-color: #F7F8FA;
+    font-family: 'Open Sans', sans-serif;
+}
+.sidebar__text__h2{
+    margin-left: 25px;
+    color: #595A5C;
+}
+.sidebar__text__p{
+    margin-left: 25px;
+    margin-right: 25px;
+    color: #A5A5A7;
+}

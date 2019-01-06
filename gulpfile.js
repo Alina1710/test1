@@ -1,12 +1,13 @@
 var gulp = require('gulp'), 
     sass = require('gulp-sass'),
     browserSync = require('browser-sync'),
-    pug = require('gulp-pug');
+    pug = require('gulp-pug'),
+    imagemin = require('gulp-imagemin');
 
 gulp.task('sass', function(){ 
-    return gulp.src('src/styles/main.scss') 
+    return gulp.src('src/**/*.scss') 
         .pipe(sass()) 
-        .pipe(gulp.dest('src/css')) 
+        .pipe(gulp.dest('build/css')) 
     .pipe(browserSync.reload({stream: true}))
 });
 
@@ -27,7 +28,7 @@ gulp.task('reload', function(){
 gulp.task('pug', function() {
   return gulp.src("src/*.pug")
       .pipe(pug())
-      .pipe(gulp.dest("./src"))
+      .pipe(gulp.dest("./build"))
       .pipe(browserSync.reload({stream: true}));
 });
 
@@ -48,8 +49,16 @@ gulp.task('build', [
 
 });
 
-gulp.task('watch', ['browser-sync', 'sass', 'pug'], function() {
-   gulp.watch("src/styles/*.scss", ['sass']).on('change', browserSync.reload); 
+gulp.task('compress', function() {
+  gulp.src('src/images/*')
+  .pipe(imagemin())
+  .pipe(gulp.dest('build/images'))
+  .pipe(browserSync.reload({stream: true}));    
+});
+
+gulp.task('watch', ['browser-sync', 'sass', 'pug', 'compress'], function() {
+   gulp.watch("src/**/*.scss", ['sass']).on('change', browserSync.reload); 
 gulp.watch("src/*.html").on('change', browserSync.reload); 
     gulp.watch('src/js/**/*.js', browserSync.reload);
+gulp.watch('src/images/*', browserSync.reload);
 });
