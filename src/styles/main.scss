@@ -1,6 +1,10 @@
 @import url(font/font.css);
 @import url(../modules/sidebar.css);
 @import url(../modules/content.css);
+@import url(../components/button.css);
+
+$text-grey: #A5A5A7;
+$text-black: #595A5C;
 
 .layout{
     display: flex;

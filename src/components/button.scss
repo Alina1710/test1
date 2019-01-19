@@ -1,0 +1,19 @@
+$text-grey: #A5A5A7;
+$text-black: #595A5C;
+$btn-color: #38B46F;
+
+button{
+    border: none;
+    background-color: transparent;
+    text-align: center;
+}
+.content__form__button__button-conditions{
+    width: 80px;
+    height: 20px;
+    color: $text-black;
+}
+.content__form__button__button-conditions:hover{
+    background-color: $btn-color;
+    border-radius: 13px;
+    color: white;
+}

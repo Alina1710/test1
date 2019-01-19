@@ -1,5 +1,8 @@
 @import url(font/font.css);
 
+$text-grey: #A5A5A7;
+$text-black: #595A5C;
+
 .sidebar__inner{
     background-color: #3E5F82;
     width: 68px;
@@ -35,10 +38,10 @@
 }
 .sidebar__text__h2{
     margin-left: 25px;
-    color: #595A5C;
+    color: $text-black;
 }
 .sidebar__text__p{
     margin-left: 25px;
     margin-right: 25px;
-    color: #A5A5A7;
+    color: $text-grey;
 }

@@ -1,6 +1,7 @@
 @import url(font/font.css);
 @import url(../modules/sidebar.css);
 @import url(../modules/content.css);
+@import url(../components/button.css);
 .layout {
   display: flex; }
 
