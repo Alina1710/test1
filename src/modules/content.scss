@@ -10,7 +10,6 @@ $bord-color: #D9D9D9;
     margin: 0 auto;
 }
 .content__text{
-   
     font-family: 'Open Sans', sans-serif;
 }
 .content__text__p{
@@ -19,14 +18,14 @@ $bord-color: #D9D9D9;
 .content__text__h1{
     color: #595959;
 }
-.content__form__h2{
+h2{
     color: $text-black;
     margin: 0;
 }
-.content__form__button__span{
+.form__span{
     color: $text-grey;
 }
-.content__form__button__list{
+.form__list{
     display: inline-block;
     border: 2px solid $bord-color;
     border-radius: 13px;
@@ -34,6 +33,12 @@ $bord-color: #D9D9D9;
     margin-left: 5px;
     margin-right: 5px;
 }
-.content__form__button__item{
+.form__item{
     display: inline-block;
+}
+.form__btn{
+    display: inline-block;
+    border: 2px solid $bord-color;
+    padding: 13px;
+    vertical-align: middle;
 }

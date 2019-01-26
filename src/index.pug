@@ -34,15 +34,26 @@ html(lang="en-us")
                         p.content__text__p Notifycation add-on
                         h1.content__text__h1 Notify users via email
                     .content__form 
-                        h2.content__form__h2 Set conditions
-                        .content__form__button
-                            span.content__form__button__span Require 
-                            ul.content__form__button__list
-                                li.content__form__button__item
-                                    button.content__form__button__button-conditions All
-                                li.content__form__button__item
-                                    button.content__form__button__button-conditions Any
-                            span.content__form__button__span of the conditions are met:
+                        h2 Set conditions
+                        .form
+                            span.form__span Require 
+                            ul.form__list
+                                li.form__item
+                                    button.button
+                                        span.button__body
+                                            span.button__text All
+                                li.form__item
+                                    button.button 
+                                        span.button__body
+                                            span.button__text Any
+                            span.form__span of the conditions are met:    
+                            .form__btn
+                                button.form__btn__button
+                                    span.form__btn__button__body
+                                        span.form__btn__button__img
+                                            img(src="https://img.icons8.com/material-outlined/26/000000/plus.png")
+                                        span.form__btn__button__text Add another conditions
+                            h2 Set add-on usage
             aside.sidebar
                 .sidebar__text
                     h2.sidebar__text__h2 General Information

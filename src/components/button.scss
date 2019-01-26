@@ -1,19 +1,36 @@
 $text-grey: #A5A5A7;
 $text-black: #595A5C;
 $btn-color: #38B46F;
+$bord-color: #D9D9D9;
 
 button{
     border: none;
     background-color: transparent;
     text-align: center;
 }
-.content__form__button__button-conditions{
+.button{
     width: 80px;
     height: 20px;
     color: $text-black;
 }
-.content__form__button__button-conditions:hover{
+.button:hover{
     background-color: $btn-color;
     border-radius: 13px;
     color: white;
+}
+.form__btn{
+    margin: 0 auto;
+}
+.form__btn__button{
+    border: 2px dashed $bord-color;
+}
+.form__btn__button__body{
+  display: flex;
+  align-items: center;
+    padding-left: 172px;
+    padding-right: 168px;
+    padding-top: 3px;
+}
+.form__btn__button__text{
+    margin-left: 4px;
 }
