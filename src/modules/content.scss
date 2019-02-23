@@ -22,16 +22,20 @@ h2{
     color: $text-black;
     margin: 0;
 }
+.form{
+    margin-bottom: 30px;
+}
 .form__span{
     color: $text-grey;
+    margin-right: 10px;
+   
 }
 .form__list{
     display: inline-block;
     border: 2px solid $bord-color;
     border-radius: 13px;
     padding: 2px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 .form__item{
     display: inline-block;
@@ -41,4 +45,24 @@ h2{
     border: 2px solid $bord-color;
     padding: 13px;
     vertical-align: middle;
+}
+.form__btn-group__list{
+    display: inline-block;
+    border: 2px solid $bord-color;
+    border-radius: 13px;
+    padding: 2px;
+}
+.form__btn-group__item{
+    display: inline-block;
+
+}
+.email__text{
+    margin-left: 5px;
+}
+.message__p{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid $bord-color;
+    padding: 4px;
+    width: 540px;
 }

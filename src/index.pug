@@ -53,7 +53,33 @@ html(lang="en-us")
                                         span.form__btn__button__img
                                             img(src="https://img.icons8.com/material-outlined/26/000000/plus.png")
                                         span.form__btn__button__text Add another conditions
-                            h2 Set add-on usage
+                        h2 Set add-on usage
+                        .form__btn-group
+                                ul.form__btn-group__list
+                                    li.form__btn-group__item
+                                        button.btn-group
+                                            span.btn-group__body
+                                                span.btn-group__text Use only once
+                                    li.form__btn-group__item
+                                        button.btn-group 
+                                            span.btn-group__body
+                                                span.btn-group__text Use after each revision     
+                        h2 Notification recipiens
+                        form.email
+                            p.email__p
+                                input.email__item(type="text" value="male@example.com")
+                            p.email__p
+                                label
+                                    input.email__radio(type="radio")
+                                    span.email__img
+                                        img(src="images/input-radio.png")
+                                    span.email__text Notify administrators
+                        h2 Email message
+                        form.message
+                            p.message__p
+                                input.message__item(type="text" value="Subject")
+                                input.message__text(type="text" value="Message")
+                        
             aside.sidebar
                 .sidebar__text
                     h2.sidebar__text__h2 General Information

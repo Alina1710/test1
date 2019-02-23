@@ -1,0 +1,31 @@
+$text-grey: #A5A5A7;
+$text-black: #595A5C;
+$btn-color: #38B46F;
+$bord-color: #D9D9D9;
+
+input{
+    border: 2px solid $bord-color;
+    color: $bord-color;
+    padding-left: 4px;
+}
+.email__item{
+    padding: 4px;
+    width: 540px;
+    background-image: url(../images/contact.png);   
+    background-repeat: no-repeat; /*Убираем повтор изображения*/   
+    background-position: 520px; /*Позиционируем*/   
+    outline: none; /*убираем стандартную обводку браузера*/  
+}
+.email__radio{
+   display: none;
+}
+.message__item{
+    border: none;
+    height: 28px;
+    border-bottom: 1px solid $bord-color;
+}
+.message__text{
+    border: none;
+    height: 41px;
+    padding-bottom: 10px;
+}
